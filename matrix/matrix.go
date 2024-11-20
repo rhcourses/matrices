@@ -27,3 +27,8 @@ func (m Matrix) AddRows(i, j int) {
 func (m Matrix) ScalarMultRow(i int, factor float64) {
 	matrixtools.ScalarMultRow(m, i, factor)
 }
+
+// Transposed liefert die Transponierte der Matrix.
+func (m Matrix) Transposed() Matrix {
+	return matrixtools.Transposed(m)
+}

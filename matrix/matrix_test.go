@@ -43,3 +43,15 @@ func ExampleMatrix_ScalarMultRow() {
 
 	// Output: [[1 2 3] [8 10 12]]
 }
+
+func ExampleMatrix_Transposed() {
+	m := Matrix{
+		{1, 2, 3},
+		{4, 5, 6},
+	}
+
+	transposed := m.Transposed()
+	fmt.Println(transposed)
+
+	// Output: [[1 4] [2 5] [3 6]]
+}
