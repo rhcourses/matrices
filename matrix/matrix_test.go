@@ -21,3 +21,25 @@ func ExampleGetCol() {
 
 	// Output: [2 5]
 }
+
+func ExampleMatrix_AddRows() {
+	m := Matrix{
+		{1, 2, 3},
+		{4, 5, 6},
+	}
+	m.AddRows(0, 1)
+	fmt.Println(m)
+
+	// Output: [[5 7 9] [4 5 6]]
+}
+
+func ExampleMatrix_ScalarMultRow() {
+	m := Matrix{
+		{1, 2, 3},
+		{4, 5, 6},
+	}
+	m.ScalarMultRow(1, 2)
+	fmt.Println(m)
+
+	// Output: [[1 2 3] [8 10 12]]
+}

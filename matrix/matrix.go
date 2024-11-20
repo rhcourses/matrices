@@ -15,3 +15,15 @@ func (m Matrix) Row(i int) Row {
 func (m Matrix) Col(j int) Col {
 	return matrixtools.GetCol(m, j)
 }
+
+// AddRows erwartet zwei Zeilennummern i und j.
+// Addiert die beiden Zeilen paarweise und speichert das Ergebnis in Zeile i.
+func (m Matrix) AddRows(i, j int) {
+	matrixtools.AddRows(m, i, j)
+}
+
+// ScalarMultRow erwartet eine Zeilennummer und einen skalaren Faktor.
+// Multipliziert die Zeile mit dem Faktor und speichert das Ergebnis in der Zeile.
+func (m Matrix) ScalarMultRow(i int, factor float64) {
+	matrixtools.ScalarMultRow(m, i, factor)
+}

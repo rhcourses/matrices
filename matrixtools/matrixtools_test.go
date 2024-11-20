@@ -23,3 +23,25 @@ func ExampleGetCol() {
 
 	// Output: [2 5]
 }
+
+func ExampleAddRows() {
+	m := [][]float64{
+		{1, 2, 3},
+		{4, 5, 6},
+	}
+	AddRows(m, 0, 1)
+	fmt.Println(m)
+
+	// Output: [[5 7 9] [4 5 6]]
+}
+
+func ExampleScalarMultRow() {
+	m := [][]float64{
+		{1, 2, 3},
+		{4, 5, 6},
+	}
+	ScalarMultRow(m, 1, 2)
+	fmt.Println(m)
+
+	// Output: [[1 2 3] [8 10 12]]
+}
